@@ -1,0 +1,91 @@
+d vec:  [4 5 3 5 5]
+
+First 5 training samples (X_train and corresponding rewards):
+X_train[0] = [6 2 6 7 4], reward = 18
+X_train[1] = [3 7 2 5 4], reward = 19
+X_train[2] = [1 7 3 5 1], reward = 15
+X_train[3] = [7 4 0 5 8], reward = 18
+X_train[4] = [0 2 3 6 3], reward = 13
+
+First 5 testing samples (X_test and corresponding rewards):
+X_test[0] = [4 8 3 4 8], reward = 21
+X_test[1] = [7 2 0 2 3], reward = 11
+X_test[2] = [1 0 6 7 6], reward = 14
+X_test[3] = [5 4 3 0 6], reward = 16
+X_test[4] = [4 6 0 2 8], reward = 16
+Epoch 1/100 - Train Loss: 209.3936, Test Loss: 227.2538
+Epoch 2/100 - Train Loss: 182.9191, Test Loss: 200.7669
+Epoch 3/100 - Train Loss: 160.0211, Test Loss: 176.6824
+Epoch 4/100 - Train Loss: 139.5514, Test Loss: 155.4745
+Epoch 5/100 - Train Loss: 121.3548, Test Loss: 136.3945
+Epoch 6/100 - Train Loss: 105.2095, Test Loss: 119.1918
+Epoch 7/100 - Train Loss: 90.9563, Test Loss: 103.8595
+Epoch 8/100 - Train Loss: 78.4647, Test Loss: 90.3970
+Epoch 9/100 - Train Loss: 67.5848, Test Loss: 78.7736
+Epoch 10/100 - Train Loss: 58.2003, Test Loss: 68.3812
+Epoch 11/100 - Train Loss: 50.1300, Test Loss: 59.3490
+Epoch 12/100 - Train Loss: 43.2099, Test Loss: 51.7391
+Epoch 13/100 - Train Loss: 37.3758, Test Loss: 45.0148
+Epoch 14/100 - Train Loss: 32.4642, Test Loss: 39.2042
+Epoch 15/100 - Train Loss: 28.3806, Test Loss: 34.3905
+Epoch 16/100 - Train Loss: 25.0069, Test Loss: 30.3519
+Epoch 17/100 - Train Loss: 22.2408, Test Loss: 26.7320
+Epoch 18/100 - Train Loss: 19.9827, Test Loss: 23.9846
+Epoch 19/100 - Train Loss: 18.2103, Test Loss: 21.4581
+Epoch 20/100 - Train Loss: 16.7822, Test Loss: 19.5775
+Epoch 21/100 - Train Loss: 15.6835, Test Loss: 17.8278
+Epoch 22/100 - Train Loss: 14.8235, Test Loss: 16.5502
+Epoch 23/100 - Train Loss: 14.1783, Test Loss: 15.3821
+Epoch 24/100 - Train Loss: 13.6761, Test Loss: 14.5243
+Epoch 25/100 - Train Loss: 13.3134, Test Loss: 13.8327
+Epoch 26/100 - Train Loss: 13.0627, Test Loss: 13.2330
+Epoch 27/100 - Train Loss: 12.8809, Test Loss: 12.7624
+Epoch 28/100 - Train Loss: 12.7215, Test Loss: 12.3983
+Epoch 29/100 - Train Loss: 12.6292, Test Loss: 12.1200
+Epoch 30/100 - Train Loss: 12.5623, Test Loss: 11.7939
+Epoch 31/100 - Train Loss: 12.5117, Test Loss: 11.6347
+Epoch 32/100 - Train Loss: 12.4902, Test Loss: 11.5536
+Epoch 33/100 - Train Loss: 12.4587, Test Loss: 11.3562
+Epoch 34/100 - Train Loss: 12.4385, Test Loss: 11.2205
+Epoch 35/100 - Train Loss: 12.4433, Test Loss: 11.2330
+Epoch 36/100 - Train Loss: 12.4392, Test Loss: 11.1565
+Epoch 37/100 - Train Loss: 12.4577, Test Loss: 10.9957
+Epoch 38/100 - Train Loss: 12.4438, Test Loss: 11.0135
+Epoch 39/100 - Train Loss: 12.4267, Test Loss: 11.0280
+Epoch 40/100 - Train Loss: 12.4353, Test Loss: 11.0120
+Epoch 41/100 - Train Loss: 12.4264, Test Loss: 10.9278
+Epoch 42/100 - Train Loss: 12.4256, Test Loss: 10.9192
+Epoch 43/100 - Train Loss: 12.4495, Test Loss: 10.9035
+Epoch 44/100 - Train Loss: 12.4238, Test Loss: 10.9423
+Epoch 45/100 - Train Loss: 12.4353, Test Loss: 10.8435
+Epoch 46/100 - Train Loss: 12.4217, Test Loss: 10.9528
+Epoch 47/100 - Train Loss: 12.4202, Test Loss: 10.9097
+Epoch 48/100 - Train Loss: 12.4389, Test Loss: 10.8865
+Epoch 49/100 - Train Loss: 12.4369, Test Loss: 10.9566
+Epoch 50/100 - Train Loss: 12.4257, Test Loss: 10.9210
+Epoch 51/100 - Train Loss: 12.4593, Test Loss: 10.9645
+Epoch 52/100 - Train Loss: 12.4243, Test Loss: 10.8848
+Epoch 53/100 - Train Loss: 12.4363, Test Loss: 10.8652
+Epoch 54/100 - Train Loss: 12.4368, Test Loss: 10.9065
+Epoch 55/100 - Train Loss: 12.4259, Test Loss: 10.8466
+Epoch 56/100 - Train Loss: 12.4309, Test Loss: 10.8435
+Epoch 57/100 - Train Loss: 12.4337, Test Loss: 10.8071
+Epoch 58/100 - Train Loss: 12.4335, Test Loss: 10.9078
+Epoch 59/100 - Train Loss: 12.4479, Test Loss: 10.8890
+Epoch 60/100 - Train Loss: 12.4609, Test Loss: 10.8889
+Epoch 61/100 - Train Loss: 12.4623, Test Loss: 10.8752
+Epoch 62/100 - Train Loss: 12.4350, Test Loss: 10.8871
+Epoch 63/100 - Train Loss: 12.4280, Test Loss: 10.8438
+Epoch 64/100 - Train Loss: 12.4408, Test Loss: 10.8836
+Epoch 65/100 - Train Loss: 12.4481, Test Loss: 10.8633
+Traceback (most recent call last):
+  File "/Users/devarora/ml/submodular_nn/submodular_net.py", line 98, in <module>
+    loss.backward()
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

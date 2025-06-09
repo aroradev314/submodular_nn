@@ -1,0 +1,175 @@
+d vec:  [4 5 3 5 5]
+
+First 5 training samples (X_train and corresponding rewards):
+X_train[0] = [6 2 6 7 4], reward = 25
+X_train[1] = [3 7 2 5 4], reward = 21
+X_train[2] = [1 7 3 5 1], reward = 17
+X_train[3] = [7 4 0 5 8], reward = 24
+X_train[4] = [0 2 3 6 3], reward = 14
+
+First 5 testing samples (X_test and corresponding rewards):
+X_test[0] = [4 8 3 4 8], reward = 27
+X_test[1] = [7 2 0 2 3], reward = 14
+X_test[2] = [1 0 6 7 6], reward = 20
+X_test[3] = [5 4 3 0 6], reward = 18
+X_test[4] = [4 6 0 2 8], reward = 20
+Epoch 1/100 - Train Loss: 57.6408, Test Loss: 0.7819
+Epoch 2/100 - Train Loss: 0.8988, Test Loss: 0.3503
+Epoch 3/100 - Train Loss: 0.4048, Test Loss: 0.1618
+Epoch 4/100 - Train Loss: 0.1798, Test Loss: 0.1238
+Epoch 5/100 - Train Loss: 0.1080, Test Loss: 0.0838
+Epoch 6/100 - Train Loss: 0.0670, Test Loss: 0.0630
+Epoch 7/100 - Train Loss: 0.0490, Test Loss: 0.0346
+Epoch 8/100 - Train Loss: 0.0489, Test Loss: 0.0617
+Epoch 9/100 - Train Loss: 0.0401, Test Loss: 0.0391
+Epoch 10/100 - Train Loss: 0.0363, Test Loss: 0.0232
+Epoch 11/100 - Train Loss: 0.0396, Test Loss: 0.0333
+Epoch 12/100 - Train Loss: 0.0320, Test Loss: 0.0213
+Epoch 13/100 - Train Loss: 0.0278, Test Loss: 0.0235
+Epoch 14/100 - Train Loss: 0.0379, Test Loss: 0.0191
+Epoch 15/100 - Train Loss: 0.0263, Test Loss: 0.0116
+Epoch 16/100 - Train Loss: 0.0150, Test Loss: 0.0070
+Epoch 17/100 - Train Loss: 0.0128, Test Loss: 0.0123
+Epoch 18/100 - Train Loss: 0.0144, Test Loss: 0.0148
+Epoch 19/100 - Train Loss: 0.0106, Test Loss: 0.0039
+Epoch 20/100 - Train Loss: 0.0091, Test Loss: 0.0092
+Epoch 21/100 - Train Loss: 0.0098, Test Loss: 0.0356
+Epoch 22/100 - Train Loss: 0.0116, Test Loss: 0.0015
+Epoch 23/100 - Train Loss: 0.0024, Test Loss: 0.0011
+Epoch 24/100 - Train Loss: 0.0035, Test Loss: 0.0008
+Epoch 25/100 - Train Loss: 0.0044, Test Loss: 0.0050
+Epoch 26/100 - Train Loss: 0.0032, Test Loss: 0.0003
+Epoch 27/100 - Train Loss: 0.0012, Test Loss: 0.0015
+Epoch 28/100 - Train Loss: 0.0013, Test Loss: 0.0002
+Epoch 29/100 - Train Loss: 0.0025, Test Loss: 0.0008
+Epoch 30/100 - Train Loss: 0.0004, Test Loss: 0.0013
+Epoch 31/100 - Train Loss: 0.0009, Test Loss: 0.0016
+Epoch 32/100 - Train Loss: 0.0004, Test Loss: 0.0002
+Epoch 33/100 - Train Loss: 0.0006, Test Loss: 0.0003
+Epoch 34/100 - Train Loss: 0.0003, Test Loss: 0.0018
+Epoch 35/100 - Train Loss: 0.0013, Test Loss: 0.0001
+Epoch 36/100 - Train Loss: 0.0001, Test Loss: 0.0000
+Epoch 37/100 - Train Loss: 0.0002, Test Loss: 0.0004
+Epoch 38/100 - Train Loss: 0.0006, Test Loss: 0.0001
+Epoch 39/100 - Train Loss: 0.0023, Test Loss: 0.0234
+Epoch 40/100 - Train Loss: 0.0128, Test Loss: 0.0002
+Epoch 41/100 - Train Loss: 0.0007, Test Loss: 0.0007
+Epoch 42/100 - Train Loss: 0.2164, Test Loss: 0.0222
+Epoch 43/100 - Train Loss: 0.1211, Test Loss: 0.0305
+Epoch 44/100 - Train Loss: 0.0094, Test Loss: 0.0049
+Epoch 45/100 - Train Loss: 0.0019, Test Loss: 0.0124
+Epoch 46/100 - Train Loss: 0.0269, Test Loss: 0.0048
+Epoch 47/100 - Train Loss: 0.0033, Test Loss: 0.0007
+Epoch 48/100 - Train Loss: 0.0002, Test Loss: 0.0002
+Epoch 49/100 - Train Loss: 0.0000, Test Loss: 0.0000
+Epoch 50/100 - Train Loss: 0.0002, Test Loss: 0.0000
+Epoch 51/100 - Train Loss: 0.0001, Test Loss: 0.0001
+Epoch 52/100 - Train Loss: 0.0082, Test Loss: 0.0328
+Epoch 53/100 - Train Loss: 0.1352, Test Loss: 0.0841
+Epoch 54/100 - Train Loss: 0.0604, Test Loss: 0.1334
+Epoch 55/100 - Train Loss: 0.1086, Test Loss: 0.0023
+Epoch 56/100 - Train Loss: 0.0044, Test Loss: 0.0001
+Epoch 57/100 - Train Loss: 0.0002, Test Loss: 0.0010
+Epoch 58/100 - Train Loss: 0.0002, Test Loss: 0.0000
+Epoch 59/100 - Train Loss: 0.0011, Test Loss: 0.0068
+Epoch 60/100 - Train Loss: 0.0015, Test Loss: 0.0007
+Epoch 61/100 - Train Loss: 0.0001, Test Loss: 0.0000
+Epoch 62/100 - Train Loss: 0.0000, Test Loss: 0.0000
+Epoch 63/100 - Train Loss: 0.0000, Test Loss: 0.0000
+Epoch 64/100 - Train Loss: 0.0004, Test Loss: 0.0002
+Epoch 65/100 - Train Loss: 0.0332, Test Loss: 0.0074
+Epoch 66/100 - Train Loss: 0.0007, Test Loss: 0.0269
+Epoch 67/100 - Train Loss: 0.0036, Test Loss: 0.0064
+Epoch 68/100 - Train Loss: 0.3628, Test Loss: 0.1006
+Epoch 69/100 - Train Loss: 0.4269, Test Loss: 0.0109
+Epoch 70/100 - Train Loss: 0.0123, Test Loss: 0.0023
+Epoch 71/100 - Train Loss: 0.0022, Test Loss: 0.0120
+Epoch 72/100 - Train Loss: 0.0024, Test Loss: 0.0004
+Epoch 73/100 - Train Loss: 0.0027, Test Loss: 0.0002
+Epoch 74/100 - Train Loss: 0.0074, Test Loss: 0.0640
+Epoch 75/100 - Train Loss: 0.0049, Test Loss: 0.0003
+Epoch 76/100 - Train Loss: 0.0006, Test Loss: 0.0001
+Epoch 77/100 - Train Loss: 0.0002, Test Loss: 0.0002
+Epoch 78/100 - Train Loss: 0.0002, Test Loss: 0.0005
+Epoch 79/100 - Train Loss: 0.0013, Test Loss: 0.0008
+Epoch 80/100 - Train Loss: 0.0006, Test Loss: 0.0002
+Epoch 81/100 - Train Loss: 0.0160, Test Loss: 0.0020
+Epoch 82/100 - Train Loss: 0.0135, Test Loss: 0.0000
+Epoch 83/100 - Train Loss: 0.0003, Test Loss: 0.0000
+Epoch 84/100 - Train Loss: 0.0001, Test Loss: 0.0000
+Epoch 85/100 - Train Loss: 0.0002, Test Loss: 0.0001
+Epoch 86/100 - Train Loss: 0.0001, Test Loss: 0.0000
+Epoch 87/100 - Train Loss: 0.0008, Test Loss: 0.0002
+Epoch 88/100 - Train Loss: 0.0009, Test Loss: 0.0001
+Epoch 89/100 - Train Loss: 0.0018, Test Loss: 0.0002
+Epoch 90/100 - Train Loss: 0.0147, Test Loss: 0.2763
+Epoch 91/100 - Train Loss: 0.0556, Test Loss: 0.0056
+Epoch 92/100 - Train Loss: 0.0853, Test Loss: 2.0060
+Epoch 93/100 - Train Loss: 0.2219, Test Loss: 0.0827
+Epoch 94/100 - Train Loss: 0.0183, Test Loss: 0.0001
+Epoch 95/100 - Train Loss: 0.0002, Test Loss: 0.0002
+Epoch 96/100 - Train Loss: 0.0002, Test Loss: 0.0034
+Epoch 97/100 - Train Loss: 0.0006, Test Loss: 0.0012
+Epoch 98/100 - Train Loss: 0.0003, Test Loss: 0.0007
+Epoch 99/100 - Train Loss: 0.0001, Test Loss: 0.0001
+Epoch 100/100 - Train Loss: 0.0000, Test Loss: 0.0000
+tensor([[4., 8., 3., 4., 8.]]) tensor([[26.9996]])
+actual: tensor([[27.]])
+tensor([[7., 2., 0., 2., 3.]]) tensor([[13.9971]])
+actual: tensor([[14.]])
+tensor([[1., 0., 6., 7., 6.]]) tensor([[20.0027]])
+actual: tensor([[20.]])
+tensor([[5., 4., 3., 0., 6.]]) tensor([[17.9984]])
+actual: tensor([[18.]])
+tensor([[4., 6., 0., 2., 8.]]) tensor([[19.9991]])
+actual: tensor([[20.]])
+tensor([[5., 0., 0., 3., 8.]]) tensor([[15.9997]])
+actual: tensor([[16.]])
+tensor([[5., 2., 0., 3., 8.]]) tensor([[17.9984]])
+actual: tensor([[18.]])
+tensor([[2., 8., 6., 3., 2.]]) tensor([[20.9975]])
+actual: tensor([[21.]])
+tensor([[1., 4., 4., 2., 8.]]) tensor([[19.0005]])
+actual: tensor([[19.]])
+tensor([[3., 4., 3., 4., 6.]]) tensor([[19.9972]])
+actual: tensor([[20.]])
+tensor([[7., 8., 6., 4., 6.]]) tensor([[31.0009]])
+actual: tensor([[31.]])
+tensor([[5., 4., 2., 6., 1.]]) tensor([[18.0001]])
+actual: tensor([[18.]])
+tensor([[6., 8., 1., 0., 5.]]) tensor([[20.0027]])
+actual: tensor([[20.]])
+tensor([[6., 7., 1., 8., 1.]]) tensor([[23.0054]])
+actual: tensor([[23.]])
+tensor([[2., 1., 4., 4., 5.]]) tensor([[15.9994]])
+actual: tensor([[16.]])
+tensor([[2., 7., 4., 0., 5.]]) tensor([[17.9984]])
+actual: tensor([[18.]])
+tensor([[3., 0., 6., 6., 8.]]) tensor([[23.0001]])
+actual: tensor([[23.]])
+tensor([[4., 3., 3., 5., 2.]]) tensor([[16.9962]])
+actual: tensor([[17.]])
+tensor([[4., 5., 6., 2., 6.]]) tensor([[22.9982]])
+actual: tensor([[23.]])
+tensor([[5., 2., 4., 1., 3.]]) tensor([[14.9991]])
+actual: tensor([[15.]])
+tensor([[3., 7., 4., 8., 6.]]) tensor([[27.9999]])
+actual: tensor([[28.]])
+tensor([[0., 2., 4., 8., 0.]]) tensor([[13.9990]])
+actual: tensor([[14.]])
+tensor([[0., 7., 0., 5., 4.]]) tensor([[15.9997]])
+actual: tensor([[16.]])
+tensor([[5., 4., 5., 4., 4.]]) tensor([[21.9979]])
+actual: tensor([[22.]])
+tensor([[3., 2., 2., 3., 8.]]) tensor([[17.9965]])
+actual: tensor([[18.]])
+tensor([[1., 8., 0., 0., 4.]]) tensor([[13.0023]])
+actual: tensor([[13.]])
+tensor([[5., 5., 2., 6., 8.]]) tensor([[25.9992]])
+actual: tensor([[26.]])
+tensor([[2., 7., 5., 7., 4.]]) tensor([[24.9989]])
+actual: tensor([[25.]])
+tensor([[7., 3., 1., 7., 1.]]) tensor([[19.0041]])
+actual: tensor([[19.]])
+tensor([[3., 4., 0., 3., 5.]]) tensor([[14.9974]])
+actual: tensor([[15.]])

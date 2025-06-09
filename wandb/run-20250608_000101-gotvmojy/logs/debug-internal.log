@@ -1,0 +1,16 @@
+{"time":"2025-06-08T00:01:01.799288-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-06-08T00:01:01.799376-05:00","level":"INFO","msg":"created symlink","path":"/Users/devarora/ml/submodular_nn/wandb/run-20250608_000101-gotvmojy/logs/debug-core.log"}
+{"time":"2025-06-08T00:01:01.915319-05:00","level":"INFO","msg":"created new stream","id":"gotvmojy"}
+{"time":"2025-06-08T00:01:01.915358-05:00","level":"INFO","msg":"stream: started","id":"gotvmojy"}
+{"time":"2025-06-08T00:01:01.915402-05:00","level":"INFO","msg":"sender: started","stream_id":"gotvmojy"}
+{"time":"2025-06-08T00:01:01.915385-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"gotvmojy"}}
+{"time":"2025-06-08T00:01:01.91563-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"gotvmojy"}}
+{"time":"2025-06-08T00:01:02.11463-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-08T00:01:02.906494-05:00","level":"INFO","msg":"stream: closing","id":"gotvmojy"}
+{"time":"2025-06-08T00:01:02.906691-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-08T00:01:02.907337-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-08T00:01:03.215099-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-08T00:01:03.355588-05:00","level":"INFO","msg":"sender: closed","stream_id":"gotvmojy"}
+{"time":"2025-06-08T00:01:03.355579-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"gotvmojy"}}
+{"time":"2025-06-08T00:01:03.355568-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"gotvmojy"}}
+{"time":"2025-06-08T00:01:03.355826-05:00","level":"INFO","msg":"stream: closed","id":"gotvmojy"}

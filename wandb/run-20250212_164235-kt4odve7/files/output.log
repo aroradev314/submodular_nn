@@ -1,0 +1,187 @@
+{'env': {'start': 1, 'step_size': 0.1, 'shape': {'x': 7, 'y': 15}, 'horizon': 40, 'node_weight': 'steiner_covering', 'disc_size': 'small', 'n_players': 3, 'Cx_lengthscale': 2, 'Cx_noise': 0.001, 'Fx_lengthscale': 1, 'Fx_noise': 0.001, 'Cx_beta': 1.5, 'Fx_beta': 1.5, 'generate': False, 'env_file_name': 'env_data.pkl', 'cov_module': 'Matern', 'domains': 'single_room', 'stochasticity': 0}, 'alg': {'gamma': 1, 'type': 'M', 'ent_coef': 0.0, 'epochs': 150, 'lr': 0.005}, 'common': {'a': 1, 'subgrad': 'greedy', 'grad': 'pytorch', 'algo': 'both', 'init': 'deterministic', 'batch_size': 1}, 'visu': {'wb': 'online', 'a': 1}}
+x_ticks [-0.5001, -0.4999, 0.4999, 0.5001, 1.4999, 1.5001, 2.4999, 2.5001, 3.4999, 3.5001, 4.4999, 4.5001, 5.4999, 5.5001, 6.4999, 6.5001, 7.4999, 7.5001, 8.4999, 8.5001, 9.4999, 9.5001, 10.4999, 10.5001, 11.4999, 11.5001, 12.4999, 12.5001, 13.4999, 13.5001, 14.4999, 14.5001]
+y_ticks [-0.5001, -0.4999, 0.4999, 0.5001, 1.4999, 1.5001, 2.4999, 2.5001, 3.4999, 3.5001, 4.4999, 4.5001, 5.4999, 5.5001, 6.4999, 6.5001]
+/Users/devarora/ml/submodular_nn/dqn.py:24: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(
+/Users/devarora/ml/submodular_nn/dqn.py:31: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(
+/Users/devarora/ml/submodular_nn/replay_memory.py:12: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(reward).to(self.device), torch.tensor(next_state).float().to(self.device),
+tensor([2])
+0
+/Users/devarora/ml/submodular_nn/replay_memory.py:12: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(reward).to(self.device), torch.tensor(next_state).float().to(self.device),
+tensor([2])
+0
+tensor([11])
+1.9591180086135864
+tensor([10])
+6.1900869384408
+tensor([9])
+6.539541527628899
+tensor([10])
+6.381541430950165
+tensor([10])
+6.480924002826214
+tensor([11])
+6.26393835246563
+tensor([12])
+6.653388537466526
+tensor([11])
+6.648227617144585
+tensor([9])
+6.8333412408828735
+tensor([8])
+6.87255984544754
+tensor([13])
+6.865927278995514
+tensor([11])
+6.968674018979073
+tensor([12])
+6.768307566642761
+tensor([11])
+7.198493808507919
+tensor([16])
+7.095458820462227
+tensor([6])
+6.972137197852135
+tensor([5])
+7.056802347302437
+tensor([9])
+7.06581936776638
+tensor([11])
+7.024232938885689
+tensor([11])
+7.10134656727314
+tensor([11])
+7.04053507745266
+tensor([10])
+6.985705092549324
+tensor([9])
+6.956845477223396
+tensor([9])
+7.311557725071907
+tensor([10])
+7.15523399412632
+tensor([9])
+7.621437922120094
+tensor([9])
+7.527866572141647
+tensor([11])
+7.585274890065193
+tensor([11])
+7.498637452721596
+tensor([10])
+7.54648645222187
+tensor([9])
+7.355817884206772
+tensor([5])
+7.184892624616623
+tensor([11])
+7.226669833064079
+tensor([10])
+7.367108166217804
+tensor([9])
+7.260199800133705
+tensor([10])
+7.148144423961639
+tensor([11])
+7.2095742374658585
+tensor([13])
+7.081656783819199
+tensor([5])
+7.16955529153347
+tensor([15])
+7.001914888620377
+tensor([10])
+7.2636593878269196
+tensor([10])
+7.120712131261826
+tensor([9])
+7.1694480031728745
+tensor([9])
+7.349720373749733
+tensor([10])
+7.356405958533287
+tensor([8])
+7.197951748967171
+tensor([10])
+7.1524658203125
+tensor([9])
+7.184983476996422
+tensor([9])
+6.929985523223877
+tensor([9])
+7.103649809956551
+tensor([10])
+7.1173737198114395
+tensor([9])
+7.105373799800873
+tensor([9])
+6.99630805850029
+tensor([10])
+7.033912256360054
+tensor([9])
+7.296811431646347
+tensor([9])
+7.353881895542145
+tensor([9])
+6.93608845770359
+tensor([9])
+7.394662216305733
+tensor([9])
+7.1291805654764175
+tensor([4])
+7.055068328976631
+tensor([12])
+7.152253493666649
+tensor([9])
+7.097587734460831
+tensor([9])
+6.9682267010211945
+tensor([9])
+7.023670896887779
+tensor([10])
+7.122503079473972
+tensor([9])
+6.907415449619293
+tensor([9])
+7.2262459099292755
+tensor([9])
+6.982919856905937
+tensor([9])
+6.858412474393845
+tensor([9])
+6.764153078198433
+tensor([4])
+7.063507795333862
+tensor([10])
+6.819682791829109
+tensor([9])
+7.101312577724457
+tensor([9])
+6.615001916885376
+tensor([9])
+7.009668350219727
+tensor([9])
+6.836955972015858
+Traceback (most recent call last):
+  File "/Users/devarora/ml/submodular_nn/main.py", line 98, in <module>
+    loss = agent.train_step(BATCH_SIZE)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devarora/ml/submodular_nn/dqn.py", line 163, in train_step
+    next_q_values = self.target_net(next_states).gather(1, next_actions).detach()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devarora/ml/submodular_nn/dqn.py", line 45, in forward
+    z = self.activ(z @ torch.t(W) + b)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devarora/ml/submodular_nn/dqn.py", line 37, in <lambda>
+    self.activ = lambda x: torch.min(torch.zeros_like(x), x)
+
+KeyboardInterrupt

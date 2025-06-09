@@ -1,0 +1,16 @@
+{"time":"2025-03-29T23:36:24.086365-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-03-29T23:36:24.086471-05:00","level":"INFO","msg":"created symlink","path":"/Users/devarora/ml/submodular_nn/wandb/run-20250329_233624-2pyugk94/logs/debug-core.log"}
+{"time":"2025-03-29T23:36:24.20318-05:00","level":"INFO","msg":"created new stream","id":"2pyugk94"}
+{"time":"2025-03-29T23:36:24.203224-05:00","level":"INFO","msg":"stream: started","id":"2pyugk94"}
+{"time":"2025-03-29T23:36:24.203252-05:00","level":"INFO","msg":"sender: started","stream_id":"2pyugk94"}
+{"time":"2025-03-29T23:36:24.203622-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"2pyugk94"}}
+{"time":"2025-03-29T23:36:24.203584-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"2pyugk94"}}
+{"time":"2025-03-29T23:36:24.332558-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-29T23:36:24.85933-05:00","level":"INFO","msg":"stream: closing","id":"2pyugk94"}
+{"time":"2025-03-29T23:36:24.859693-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-29T23:36:24.860389-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-29T23:36:25.165774-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-29T23:36:25.271613-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"2pyugk94"}}
+{"time":"2025-03-29T23:36:25.271642-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"2pyugk94"}}
+{"time":"2025-03-29T23:36:25.271653-05:00","level":"INFO","msg":"sender: closed","stream_id":"2pyugk94"}
+{"time":"2025-03-29T23:36:25.272034-05:00","level":"INFO","msg":"stream: closed","id":"2pyugk94"}

@@ -1,0 +1,47 @@
+{
+  "os": "macOS-14.5-arm64-arm-64bit",
+  "python": "3.12.4",
+  "startedAt": "2025-02-12T22:43:47.066922Z",
+  "args": [
+    "-i",
+    "1",
+    "-env",
+    "1",
+    "-param",
+    "steiner/subrl_M"
+  ],
+  "program": "/Users/devarora/ml/submodular_nn/main.py",
+  "codePath": "main.py",
+  "git": {
+    "remote": "git@github.com:aroradev314/submodular_nn.git",
+    "commit": "168460a8b3d2bf74879b5875b1c34b4e5779682c"
+  },
+  "email": "aroradev314@gmail.com",
+  "root": "/Users/devarora/ml/submodular_nn",
+  "host": "Devs-MacBook-Air.local",
+  "username": "devarora",
+  "executable": "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/bin/python3",
+  "codePathLocal": "main.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "231218360320"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Apple M2",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 8,
+    "memoryGb": 8
+  }
+}

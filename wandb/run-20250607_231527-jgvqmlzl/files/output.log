@@ -1,0 +1,6 @@
+d vec:  [4 5 3 5 5]
+Traceback (most recent call last):
+  File "/Users/devarora/ml/submodular_nn/submodular_net.py", line 57, in <module>
+    X_train, y_train = generate_dataset(num_train, d, modular=modular)
+                                                              ^^^^^^^
+NameError: name 'modular' is not defined

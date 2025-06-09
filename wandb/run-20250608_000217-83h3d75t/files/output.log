@@ -1,0 +1,73 @@
+d vec:  [4 5 3 5 5]
+
+First 5 training samples (X_train and corresponding rewards):
+X_train[0] = [6 2 6 7 4], reward = 18
+X_train[1] = [3 7 2 5 4], reward = 19
+X_train[2] = [1 7 3 5 1], reward = 15
+X_train[3] = [7 4 0 5 8], reward = 18
+X_train[4] = [0 2 3 6 3], reward = 13
+
+First 5 testing samples (X_test and corresponding rewards):
+X_test[0] = [4 8 3 4 8], reward = 21
+X_test[1] = [7 2 0 2 3], reward = 11
+X_test[2] = [1 0 6 7 6], reward = 14
+X_test[3] = [5 4 3 0 6], reward = 16
+X_test[4] = [4 6 0 2 8], reward = 16
+Epoch 1/100 - Train Loss: 213.0571, Test Loss: 231.5408
+Epoch 2/100 - Train Loss: 186.9776, Test Loss: 204.9348
+Epoch 3/100 - Train Loss: 163.8893, Test Loss: 180.8591
+Epoch 4/100 - Train Loss: 143.0999, Test Loss: 159.2187
+Epoch 5/100 - Train Loss: 124.5631, Test Loss: 139.8127
+Epoch 6/100 - Train Loss: 108.1126, Test Loss: 122.3090
+Epoch 7/100 - Train Loss: 93.6406, Test Loss: 106.6941
+Epoch 8/100 - Train Loss: 80.9101, Test Loss: 93.1210
+Epoch 9/100 - Train Loss: 69.8156, Test Loss: 80.9476
+Epoch 10/100 - Train Loss: 60.1586, Test Loss: 70.4747
+Epoch 11/100 - Train Loss: 51.8639, Test Loss: 61.2020
+Epoch 12/100 - Train Loss: 44.7470, Test Loss: 53.2985
+Epoch 13/100 - Train Loss: 38.6884, Test Loss: 46.5231
+Epoch 14/100 - Train Loss: 33.5589, Test Loss: 40.7084
+Epoch 15/100 - Train Loss: 29.3135, Test Loss: 35.4749
+Epoch 16/100 - Train Loss: 25.7517, Test Loss: 31.2551
+Epoch 17/100 - Train Loss: 22.8575, Test Loss: 27.6313
+Epoch 18/100 - Train Loss: 20.5047, Test Loss: 24.5448
+Epoch 19/100 - Train Loss: 18.6215, Test Loss: 22.0354
+Epoch 20/100 - Train Loss: 17.1209, Test Loss: 20.0134
+Epoch 21/100 - Train Loss: 15.9391, Test Loss: 18.2637
+Epoch 22/100 - Train Loss: 15.0253, Test Loss: 16.8080
+Epoch 23/100 - Train Loss: 14.3288, Test Loss: 15.7562
+Epoch 24/100 - Train Loss: 13.8192, Test Loss: 14.5839
+Epoch 25/100 - Train Loss: 13.4040, Test Loss: 13.9446
+Epoch 26/100 - Train Loss: 13.1225, Test Loss: 13.3887
+Epoch 27/100 - Train Loss: 12.9142, Test Loss: 12.8364
+Epoch 28/100 - Train Loss: 12.7689, Test Loss: 12.4192
+Epoch 29/100 - Train Loss: 12.6528, Test Loss: 12.1914
+Epoch 30/100 - Train Loss: 12.5746, Test Loss: 11.9383
+Epoch 31/100 - Train Loss: 12.5224, Test Loss: 11.7063
+Epoch 32/100 - Train Loss: 12.4899, Test Loss: 11.5227
+Epoch 33/100 - Train Loss: 12.4647, Test Loss: 11.3985
+Epoch 34/100 - Train Loss: 12.4467, Test Loss: 11.3132
+Epoch 35/100 - Train Loss: 12.4683, Test Loss: 11.1315
+Epoch 36/100 - Train Loss: 12.4410, Test Loss: 11.1846
+Epoch 37/100 - Train Loss: 12.4445, Test Loss: 11.0536
+Epoch 38/100 - Train Loss: 12.4314, Test Loss: 11.0556
+Traceback (most recent call last):
+  File "/Users/devarora/ml/submodular_nn/submodular_net.py", line 99, in <module>
+    optimizer.step()
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/optim/optimizer.py", line 391, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/optim/adam.py", line 168, in step
+    adam(
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/optim/adam.py", line 318, in adam
+    func(params,
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/optim/adam.py", line 432, in _single_tensor_adam
+    bias_correction2_sqrt = _dispatch_sqrt(bias_correction2)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/optim/optimizer.py", line 97, in _dispatch_sqrt
+    def _dispatch_sqrt(x: float):  # float annotation is needed because of torchscript type inference
+
+KeyboardInterrupt

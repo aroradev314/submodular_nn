@@ -1,0 +1,69 @@
+d vec:  [4 5 3 5 5]
+
+First 5 training samples (X_train and corresponding rewards):
+X_train[0] = [6 2 6 7 4], reward = 18
+X_train[1] = [3 7 2 5 4], reward = 19
+X_train[2] = [1 7 3 5 1], reward = 15
+X_train[3] = [7 4 0 5 8], reward = 18
+X_train[4] = [0 2 3 6 3], reward = 13
+
+First 5 testing samples (X_test and corresponding rewards):
+X_test[0] = [4 8 3 4 8], reward = 21
+X_test[1] = [7 2 0 2 3], reward = 11
+X_test[2] = [1 0 6 7 6], reward = 14
+X_test[3] = [5 4 3 0 6], reward = 16
+X_test[4] = [4 6 0 2 8], reward = 16
+Epoch 1/100 - Train Loss: 215.4206, Test Loss: 234.0180
+Epoch 2/100 - Train Loss: 189.1560, Test Loss: 207.3902
+Epoch 3/100 - Train Loss: 165.6977, Test Loss: 183.0367
+Epoch 4/100 - Train Loss: 144.7356, Test Loss: 160.8407
+Epoch 5/100 - Train Loss: 126.0675, Test Loss: 141.2356
+Epoch 6/100 - Train Loss: 109.4820, Test Loss: 123.7115
+Epoch 7/100 - Train Loss: 94.8401, Test Loss: 108.1186
+Epoch 8/100 - Train Loss: 81.9661, Test Loss: 94.4598
+Epoch 9/100 - Train Loss: 70.7723, Test Loss: 82.0293
+Epoch 10/100 - Train Loss: 61.0069, Test Loss: 71.5243
+Epoch 11/100 - Train Loss: 52.5881, Test Loss: 62.3134
+Epoch 12/100 - Train Loss: 45.3664, Test Loss: 54.0566
+Epoch 13/100 - Train Loss: 39.1978, Test Loss: 47.0798
+Epoch 14/100 - Train Loss: 34.0124, Test Loss: 41.0951
+Epoch 15/100 - Train Loss: 29.6825, Test Loss: 35.9343
+Epoch 16/100 - Train Loss: 26.0866, Test Loss: 31.6070
+Epoch 17/100 - Train Loss: 23.1290, Test Loss: 27.9840
+Epoch 18/100 - Train Loss: 20.7671, Test Loss: 24.7861
+Epoch 19/100 - Train Loss: 18.8173, Test Loss: 22.3862
+Epoch 20/100 - Train Loss: 17.2806, Test Loss: 20.1963
+Epoch 21/100 - Train Loss: 16.0566, Test Loss: 18.3887
+Epoch 22/100 - Train Loss: 15.1196, Test Loss: 16.9919
+Epoch 23/100 - Train Loss: 14.4119, Test Loss: 15.7722
+Epoch 24/100 - Train Loss: 13.8708, Test Loss: 14.9024
+Epoch 25/100 - Train Loss: 13.4718, Test Loss: 14.0590
+Epoch 26/100 - Train Loss: 13.1702, Test Loss: 13.5063
+Epoch 27/100 - Train Loss: 12.9416, Test Loss: 12.9507
+Epoch 28/100 - Train Loss: 12.7981, Test Loss: 12.5479
+Epoch 29/100 - Train Loss: 12.6693, Test Loss: 12.1603
+Epoch 30/100 - Train Loss: 12.5876, Test Loss: 11.9865
+Epoch 31/100 - Train Loss: 12.5423, Test Loss: 11.7149
+Traceback (most recent call last):
+  File "/Users/devarora/ml/submodular_nn/submodular_net.py", line 96, in <module>
+    outputs = model(batch_X)
+              ^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devarora/ml/submodular_nn/dqn.py", line 108, in forward
+    ret = self.phi[i](self.lamb * torch.sum(self.m[i](batch_x), dim=1) + (1 - self.lamb) * ret)
+                                            ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/submodular_nn/lib/python3.12/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+    ^^^^^
+KeyboardInterrupt

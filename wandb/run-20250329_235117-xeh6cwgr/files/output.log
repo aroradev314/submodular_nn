@@ -1,0 +1,15 @@
+{'env': {'start': 1, 'step_size': 0.1, 'shape': {'x': 7, 'y': 15}, 'horizon': 40, 'node_weight': 'steiner_covering', 'disc_size': 'small', 'n_players': 3, 'Cx_lengthscale': 2, 'Cx_noise': 0.001, 'Fx_lengthscale': 1, 'Fx_noise': 0.001, 'Cx_beta': 1.5, 'Fx_beta': 1.5, 'generate': False, 'env_file_name': 'env_data.pkl', 'cov_module': 'Matern', 'domains': 'single_room', 'stochasticity': 0}, 'alg': {'gamma': 1, 'type': 'M', 'ent_coef': 0.0, 'epochs': 300, 'lr': 0.005}, 'common': {'a': 1, 'subgrad': 'greedy', 'grad': 'pytorch', 'algo': 'both', 'init': 'deterministic', 'batch_size': 1}, 'visu': {'wb': 'online', 'a': 1}}
+x_ticks [-0.5001, -0.4999, 0.4999, 0.5001, 1.4999, 1.5001, 2.4999, 2.5001, 3.4999, 3.5001, 4.4999, 4.5001, 5.4999, 5.5001, 6.4999, 6.5001, 7.4999, 7.5001, 8.4999, 8.5001, 9.4999, 9.5001, 10.4999, 10.5001, 11.4999, 11.5001, 12.4999, 12.5001, 13.4999, 13.5001, 14.4999, 14.5001]
+y_ticks [-0.5001, -0.4999, 0.4999, 0.5001, 1.4999, 1.5001, 2.4999, 2.5001, 3.4999, 3.5001, 4.4999, 4.5001, 5.4999, 5.5001, 6.4999, 6.5001]
+/Users/devarora/ml/submodular_nn/dqn.py:24: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(
+/Users/devarora/ml/submodular_nn/dqn.py:31: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(
+started
+Traceback (most recent call last):
+  File "/Users/devarora/ml/submodular_nn/main.py", line 91, in <module>
+    agent.replay_memory.add(state, action, reward, next_state, done)
+  File "/Users/devarora/ml/submodular_nn/replay_memory.py", line 11, in add
+    experience = (torch.from_numpy(state).float().to(self.device), action.float().to(self.device),
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected np.ndarray (got tuple)

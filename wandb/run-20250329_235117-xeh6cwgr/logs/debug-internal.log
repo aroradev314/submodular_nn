@@ -1,0 +1,16 @@
+{"time":"2025-03-29T23:51:17.610534-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2025-03-29T23:51:17.610704-05:00","level":"INFO","msg":"created symlink","path":"/Users/devarora/ml/submodular_nn/wandb/run-20250329_235117-xeh6cwgr/logs/debug-core.log"}
+{"time":"2025-03-29T23:51:17.728542-05:00","level":"INFO","msg":"created new stream","id":"xeh6cwgr"}
+{"time":"2025-03-29T23:51:17.728574-05:00","level":"INFO","msg":"stream: started","id":"xeh6cwgr"}
+{"time":"2025-03-29T23:51:17.728593-05:00","level":"INFO","msg":"sender: started","stream_id":"xeh6cwgr"}
+{"time":"2025-03-29T23:51:17.728607-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"xeh6cwgr"}}
+{"time":"2025-03-29T23:51:17.728801-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"xeh6cwgr"}}
+{"time":"2025-03-29T23:51:17.895965-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-29T23:51:18.392245-05:00","level":"INFO","msg":"stream: closing","id":"xeh6cwgr"}
+{"time":"2025-03-29T23:51:18.392596-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-29T23:51:18.393587-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-29T23:51:18.7017-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-29T23:51:18.813741-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"xeh6cwgr"}}
+{"time":"2025-03-29T23:51:18.813773-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"xeh6cwgr"}}
+{"time":"2025-03-29T23:51:18.813793-05:00","level":"INFO","msg":"sender: closed","stream_id":"xeh6cwgr"}
+{"time":"2025-03-29T23:51:18.814136-05:00","level":"INFO","msg":"stream: closed","id":"xeh6cwgr"}

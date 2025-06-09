@@ -1,0 +1,89 @@
+d vec:  [4 5 3 5 5]
+
+First 5 training samples (X_train and corresponding rewards):
+X_train[0] = [6 2 6 7 4], reward = 25
+X_train[1] = [3 7 2 5 4], reward = 21
+X_train[2] = [1 7 3 5 1], reward = 17
+X_train[3] = [7 4 0 5 8], reward = 24
+X_train[4] = [0 2 3 6 3], reward = 14
+
+First 5 testing samples (X_test and corresponding rewards):
+X_test[0] = [4 8 3 4 8], reward = 27
+X_test[1] = [7 2 0 2 3], reward = 14
+X_test[2] = [1 0 6 7 6], reward = 20
+X_test[3] = [5 4 3 0 6], reward = 18
+X_test[4] = [4 6 0 2 8], reward = 20
+Epoch 1/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 2/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 3/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 4/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 5/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 6/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 7/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 8/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 9/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 10/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 11/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 12/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 13/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 14/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 15/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 16/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 17/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 18/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 19/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 20/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 21/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 22/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 23/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 24/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 25/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 26/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 27/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 28/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 29/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 30/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 31/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 32/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 33/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 34/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 35/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 36/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 37/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 38/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 39/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 40/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 41/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 42/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 43/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 44/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 45/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 46/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 47/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 48/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 49/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 50/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 51/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 52/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 53/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 54/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 55/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 56/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 57/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 58/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 59/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 60/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 61/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 62/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 63/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 64/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 65/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 66/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 67/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 68/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Epoch 69/100 - Train Loss: 358.4200, Test Loss: 409.9000
+Traceback (most recent call last):
+  File "/Users/devarora/ml/submodular_nn/submodular_net.py", line 106, in <module>
+    running_loss += loss.item() * batch_X.size(0)
+                                  ^^^^^^^^^^^^^^^
+KeyboardInterrupt
