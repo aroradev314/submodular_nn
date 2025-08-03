@@ -9,51 +9,6 @@ from torch import nn
 import torch
 import math
 
-# Implements increasing concave neural network over its input y
-# class IncreasingConcaveNet(nn.Module):
-#     def __init__(self, layers, device="cpu"):
-#         super(IncreasingConcaveNet, self).__init__()
-#         weight_dims = list(zip(layers[1:], layers))
-#         self.Ws = nn.ParameterList()
-#         self.bs = nn.ParameterList()
-#         self.layers = layers
-#         self.device = device
-#         for odim, idim in weight_dims:
-#             W = nn.Parameter(torch.zeros(odim, idim))
-#             b = nn.Parameter(torch.zeros(odim))
-            
-#             # Calculate k as described in the spec
-#             k = 1.0 / idim
-            
-#             # Use nn.init to initialize from uniform distribution
-#             nn.init.uniform_(W, -math.sqrt(k), math.sqrt(k))
-#             nn.init.uniform_(b, -math.sqrt(k), math.sqrt(k))
-            
-#             self.Ws.append(W)
-#             self.bs.append(b)
-
-#         # self.activ = lambda x : torch.relu(x)
-#         self.activ = lambda x: torch.min(torch.zeros_like(x), x)
-#         # self.activ = lambda x: torch.ones_like(x) - torch.exp(-x)
-
-#     def forward(self, z):
-#         layers = list(zip(self.Ws, self.bs))
-
-#         # z = torch.unsqueeze(z, -1)
-#         for W, b in layers[:-1]:
-#             # z = z @ torch.t(W) + b
-#             z = self.activ(z @ torch.t(W) + b)
-
-#         out_W, out_b = layers[-1]
-#         z = z @ torch.t(out_W) + out_b
-
-#         return z
-
-#     # make parameters of hidden layers positive to preserve convexity
-#     def clamp_weights(self):
-#         for layer in self.Ws:
-#             layer.data.clamp_(min=0)
-
 class IncreasingConcaveNet(nn.Module):
     def __init__(self, layers, device="cpu"):
         super(IncreasingConcaveNet, self).__init__()
@@ -103,8 +58,12 @@ class MonotoneSubmodularNet(nn.Module):
         batch_x = torch.unsqueeze(x, -1)
         ret = torch.sum(self.m[0](batch_x), dim=1)
         # print(f"0: {ret}")
+        
         for i in range(1, self.m_layers):
             ret = self.phi[i](self.lamb * torch.sum(self.m[i](batch_x), dim=1) + (1 - self.lamb) * ret)
+            # remove the phi network from the equation
+            # ret = torch.log1p(self.lamb * torch.sum(self.m[i](batch_x), dim=1) + (1 - self.lamb) * ret)
+
             # print(f"{i + 1}: {ret}")
 
         return ret
