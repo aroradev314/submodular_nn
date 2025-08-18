@@ -32,26 +32,35 @@ class IncreasingConcaveNet(nn.Module):
             for layer in self.layers:
                 layer.weight.data.clamp_(min=0)  # clamp only weights, not bias
 
+# an alternative to the traditional approach where we have a soft regularization penalty instead of
+# doing a hard weight clamp every time 
+def concavity_regularizer(model, strength=1.0):
+    penalty = 0.0
+    for layer in model.layers:  # usually only hidden layers must be constrained
+        # penalize negative weights
+        penalty += torch.sum(torch.relu(-layer.weight))
+    return strength * penalty
+
 class MonotoneSubmodularNet(nn.Module):
     # repr_size is the length of the vector that has the set representation
     def __init__(self, phi_layers, lamb, m_layers, device="cpu"):
         super(MonotoneSubmodularNet, self).__init__()
-        # self.phi = IncreasingConcaveNet(phi_layers, device=device)
+        self.phi = IncreasingConcaveNet(phi_layers, device=device)
         # Try: One phi layer for every m layer
         self.lamb = lamb
         self.m_layers = m_layers
 
         self.m = nn.ModuleList()
-        self.phi = nn.ModuleList()
+        # self.phi = nn.ModuleList()
         for i in range(m_layers):
-            self.phi.append(IncreasingConcaveNet(phi_layers, device=device))
+            # self.phi.append(IncreasingConcaveNet(phi_layers, device=device))
             layers = []
             layers.append(nn.Linear(1, 10))
             layers.append(nn.ReLU())
             layers.append(nn.Linear(10, 10))
             layers.append(nn.ReLU())
             layers.append(nn.Linear(10, 1))
-            layers.append(nn.Softplus())
+            layers.append(nn.Softplus()) # smooth alternative to relu 
             self.m.append(nn.Sequential(*layers))
     
     def forward(self, x):
@@ -60,7 +69,7 @@ class MonotoneSubmodularNet(nn.Module):
         # print(f"0: {ret}")
         
         for i in range(1, self.m_layers):
-            ret = self.phi[i](self.lamb * torch.sum(self.m[i](batch_x), dim=1) + (1 - self.lamb) * ret)
+            ret = self.phi(self.lamb * torch.sum(self.m[i](batch_x), dim=1) + (1 - self.lamb) * ret)
             # remove the phi network from the equation
             # ret = torch.log1p(self.lamb * torch.sum(self.m[i](batch_x), dim=1) + (1 - self.lamb) * ret)
 
@@ -70,8 +79,9 @@ class MonotoneSubmodularNet(nn.Module):
 
     def clamp_weights(self):
         with torch.no_grad():
-            for net in self.phi:
-                net.clamp_weights()
+            # for net in self.phi:
+            #     net.clamp_weights()
+            self.phi.clamp_weights()
     
 class PartialInputConcaveNN(nn.Module):
     def __init__(self, u_layers, z_layers, device="cpu"):

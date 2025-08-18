@@ -3,7 +3,7 @@ import torch
 from torch.utils.data import TensorDataset, DataLoader
 import torch.optim as optim
 import torch.nn as nn
-from dqn import MonotoneSubmodularNet
+from dqn import MonotoneSubmodularNet, concavity_regularizer
 import wandb
 import argparse
 from torch.optim.lr_scheduler import StepLR
@@ -70,10 +70,10 @@ for i in range(5):
 
 # Hyperparameters
 learning_rate = 1e-2
-num_epochs = 1000
+num_epochs = 200
 batch_size = 1
 
-m_layers = 10
+m_layers = 2
 phi_layers = [1, 50, 50, 50, 1]
 lamb = 0.5
 
@@ -103,8 +103,12 @@ for epoch in range(num_epochs):
     for batch_X, batch_y in train_loader:
         optimizer.zero_grad()
         outputs = model(batch_X)
+
         loss = criterion(outputs, batch_y)
-        loss.backward()
+        reg_loss = concavity_regularizer(model.phi, strength=0.1*epoch)
+        total_loss = loss + reg_loss
+
+        total_loss.backward()
         optimizer.step()
 
         # if epoch == 0:
@@ -113,8 +117,8 @@ for epoch in range(num_epochs):
         #             print(f"Parameter: {name}, Gradient: {param.grad}")
         #             print(f"Parameter val: {param}")
 
-        running_loss += loss.item() * batch_X.size(0)
-        model.clamp_weights()
+        running_loss += total_loss.item() * batch_X.size(0)
+        # model.clamp_weights()
     
     epoch_loss = running_loss / len(train_dataset)
 
