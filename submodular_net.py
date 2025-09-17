@@ -38,7 +38,7 @@ def modular_reward_function(x, d):
 
 # Function to generate a dataset
 def generate_dataset(num_samples, d, extra=3, modular=False):
-    # For each prize i, sample x_i uniformly from 0 to d[i] + extra
+    # For each prize i, sample x_i uniformly fromp0 to d[i] + extra
     X = np.zeros((num_samples, len(d)), dtype=int)
     y = np.zeros(num_samples, dtype=int)
     
@@ -54,7 +54,7 @@ def generate_dataset(num_samples, d, extra=3, modular=False):
 
 # Generate training and testing sets
 num_train = 100
-num_test = 30
+num_test = 100
 
 X_train, y_train = generate_dataset(num_train, d, modular=modular)
 X_test, y_test = generate_dataset(num_test, d, modular=modular)
@@ -69,8 +69,9 @@ for i in range(5):
 
 
 # Hyperparameters
-learning_rate = 1e-2
-num_epochs = 200
+learning_rate = 1e-3
+num_epochs = 100
+first_hard_enforced = int(num_epochs * 0.7)
 batch_size = 1
 
 m_layers = 2
@@ -97,7 +98,7 @@ optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 criterion = nn.MSELoss()
 
 
-for epoch in range(num_epochs):
+for epoch in range(1, num_epochs + 1):
     model.train()
     running_loss = 0.0
     for batch_X, batch_y in train_loader:
@@ -105,7 +106,7 @@ for epoch in range(num_epochs):
         outputs = model(batch_X)
 
         loss = criterion(outputs, batch_y)
-        reg_loss = concavity_regularizer(model.phi, strength=0.1*epoch)
+        reg_loss = concavity_regularizer(model.phi, strength=epoch, func="square")
         total_loss = loss + reg_loss
 
         total_loss.backward()
@@ -118,11 +119,13 @@ for epoch in range(num_epochs):
         #             print(f"Parameter val: {param}")
 
         running_loss += total_loss.item() * batch_X.size(0)
-        # model.clamp_weights()
+        # if epoch >= first_hard_enforced:
+        #     model.clamp_weights()
     
     epoch_loss = running_loss / len(train_dataset)
 
     # Evaluate on test set
+
     model.eval()
     test_loss = 0.0
     with torch.no_grad():

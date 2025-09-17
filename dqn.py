@@ -34,28 +34,34 @@ class IncreasingConcaveNet(nn.Module):
 
 # an alternative to the traditional approach where we have a soft regularization penalty instead of
 # doing a hard weight clamp every time 
-def concavity_regularizer(model, strength=1.0):
+def concavity_regularizer(models, strength=1.0, func="linear"):
     penalty = 0.0
-    for layer in model.layers:  # usually only hidden layers must be constrained
-        # penalize negative weights
-        penalty += torch.sum(torch.relu(-layer.weight))
+    assert(func in ("linear", "square"), "type must either be 'linear' or 'square'")
+    power = (1 if func == "linear" else 2)
+    for model in models:
+        try:
+            for layer in model.layers:  # usually only hidden layers must be constrained
+                # penalize negative weights
+                penalty += torch.pow(torch.sum(torch.relu(-layer.weight)), power) 
+        except:
+            penalty += torch.pow(torch.sum(torch.relu(-model.weight)), power) 
     return strength * penalty
 
 class MonotoneSubmodularNet(nn.Module):
     # repr_size is the length of the vector that has the set representation
-    def __init__(self, phi_layers, lamb, m_layers, device="cpu"):
+    def __init__(self, phi_layers, lamb, m_layers, m_size=1, device="cpu"):
         super(MonotoneSubmodularNet, self).__init__()
-        self.phi = IncreasingConcaveNet(phi_layers, device=device)
-        # Try: One phi layer for every m layer
         self.lamb = lamb
         self.m_layers = m_layers
 
         self.m = nn.ModuleList()
-        # self.phi = nn.ModuleList()
+        self.phi = nn.ModuleList()
+        # self.phi = IncreasingConcaveNet(phi_layers, device=device)
+        # Try: One phi layer for every m layer
         for i in range(m_layers):
-            # self.phi.append(IncreasingConcaveNet(phi_layers, device=device))
+            self.phi.append(IncreasingConcaveNet(phi_layers, device=device))
             layers = []
-            layers.append(nn.Linear(1, 10))
+            layers.append(nn.Linear(m_size, 10))
             layers.append(nn.ReLU())
             layers.append(nn.Linear(10, 10))
             layers.append(nn.ReLU())
@@ -69,7 +75,7 @@ class MonotoneSubmodularNet(nn.Module):
         # print(f"0: {ret}")
         
         for i in range(1, self.m_layers):
-            ret = self.phi(self.lamb * torch.sum(self.m[i](batch_x), dim=1) + (1 - self.lamb) * ret)
+            ret = self.phi[i](self.lamb * torch.sum(self.m[i](batch_x), dim=1) + (1 - self.lamb) * ret)
             # remove the phi network from the equation
             # ret = torch.log1p(self.lamb * torch.sum(self.m[i](batch_x), dim=1) + (1 - self.lamb) * ret)
 
